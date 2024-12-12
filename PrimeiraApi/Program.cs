@@ -22,4 +22,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Alternativa para mapear as rotas da aplicação sem ser diretamente na controller
+app.MapGet("/", () => "Acesse /swagger para mais informações"); 
+app.MapGet("/teste-get", () => "Teste");
+
 app.Run();

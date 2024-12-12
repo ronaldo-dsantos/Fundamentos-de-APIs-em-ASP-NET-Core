@@ -2,32 +2,27 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PrimeiraApi.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
+    [ApiController] // Informando que esta controller é uma controller de API
+    // [Route("[controller]")] // Informando que a rota é o nome da controller
+    [Route("api/minha-controller")] // Informando um nome personalizado para a rota
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
+        public WeatherForecastController()
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
+            
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet] // Informando o verbo do método
+        public IActionResult Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return Ok();
         }
+
+        [HttpGet("{id:int}/{id2:int}")] // Informando o verbo do método, os parâmetros que o método vai receber e o tipo do parâmetro 
+        public IActionResult Get2(int id, int id2)
+        {
+            return Ok();
+        }
+
     }
 }
