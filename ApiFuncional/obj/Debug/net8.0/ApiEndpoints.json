@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "ApiFuncional.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/conta/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginUser",
+        "Type": "ApiFuncional.Models.LoginUserViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiFuncional.Controllers.AuthController",
+    "Method": "Registrar",
+    "RelativePath": "api/conta/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerUser",
+        "Type": "ApiFuncional.Models.RegisterUserViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiFuncional.Controllers.ProdutosController",
     "Method": "GetProdutos",
     "RelativePath": "api/produtos",

@@ -151,3 +151,4 @@ C:\Users\ronal\OneDrive\Documentos\desenvolvedor.io\07-fundamentos-de-apis-em-as
 C:\Users\ronal\OneDrive\Documentos\desenvolvedor.io\07-fundamentos-de-apis-em-asp-net-core\ApiFuncional\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\ronal\OneDrive\Documentos\desenvolvedor.io\07-fundamentos-de-apis-em-asp-net-core\ApiFuncional\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\ronal\OneDrive\Documentos\desenvolvedor.io\07-fundamentos-de-apis-em-asp-net-core\ApiFuncional\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ronal\OneDrive\Documentos\desenvolvedor.io\07-fundamentos-de-apis-em-asp-net-core\ApiFuncional\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

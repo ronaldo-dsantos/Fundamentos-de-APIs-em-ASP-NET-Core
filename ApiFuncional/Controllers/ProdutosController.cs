@@ -2,10 +2,11 @@
 using ApiFuncional.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ApiFuncional.Controllers
 {
+    [Authorize] // Somente usuários autorizados
     [ApiController]
     [Route("api/produtos")]
     public class ProdutosController : ControllerBase
@@ -17,6 +18,7 @@ namespace ApiFuncional.Controllers
             _context = context;
         }
 
+        [AllowAnonymous] // Desfaz a necessidade de usuário autorizado para este método
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -119,6 +121,7 @@ namespace ApiFuncional.Controllers
             return NoContent();
         }
 
+        [Authorize(Roles = "Admin")] // Somente usuários autenticados e com autorização admin terão acesso a este método
         [HttpDelete("{id:int}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
