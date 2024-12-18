@@ -3,6 +3,7 @@ using ApiFuncional.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 
 namespace ApiFuncional.Controllers
 {
@@ -19,6 +20,7 @@ namespace ApiFuncional.Controllers
         }
 
         [AllowAnonymous] // Desfaz a necessidade de usuário autorizado para este método
+        //[EnableCors("Production")] // Aplicando o CORS de maneira granular, não é recomendado a não ser que de fato a aplicação exija esta maneira de aplicação
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -34,6 +36,7 @@ namespace ApiFuncional.Controllers
             return await _context.Produtos.ToListAsync();
         }
 
+        [AllowAnonymous] // Desfaz a necessidade de usuário autorizado para este método
         [HttpGet("{id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

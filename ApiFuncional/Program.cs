@@ -9,7 +9,27 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .ConfigureApiBehaviorOptions(options =>
+    {
+        options.SuppressModelStateInvalidFilter = true;
+    });
+
+// Adicionaldo o CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Development", builder => // Adicionando uma política de acesso para o ambiente de desenvolvimento
+                        builder
+                            .AllowAnyOrigin() // Permitindo o acesso de qualquer origem
+                            .AllowAnyMethod() // Permitindo o acesso a qualquer método
+                            .AllowAnyHeader()); // Permitindo qualquer cabeçalho
+
+    options.AddPolicy("Production", builder => // Adicionando uma política de acesso para o ambiente de produção
+                        builder
+                            .WithOrigins("https://localhost:9000") // Restringindo a origem do acesso
+                            .WithMethods("POST") // Restringindo o método de acesso
+                            .AllowAnyHeader()); // Permitindo qualquer cabeçalho
+});
 
 builder.Services.AddEndpointsApiExplorer();
 
@@ -81,10 +101,16 @@ builder.Services.AddAuthentication(options =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment()) // Se o ambiente for de desenvolvimento
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    app.UseCors("Development"); 
+}
+else
+{
+    app.UseCors("Production");
 }
 
 app.UseHttpsRedirection();
