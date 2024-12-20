@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PrimeiraApi.Controllers
 {
-    [ApiController] // Informando que esta controller é uma controller de API
-    // [Route("[controller]")] // Informando que a rota é o nome da controller
+    [ApiController] // Informando que se trata de uma controller de API
+    // [Route("[controller]")] // Informando que a rota Ã© o nome da controller
     [Route("api/minha-controller")] // Informando um nome personalizado para a rota
     public class WeatherForecastController : ControllerBase
     {
@@ -12,13 +12,13 @@ namespace PrimeiraApi.Controllers
             
         }
 
-        [HttpGet] // Informando o verbo do método
+        [HttpGet] // Informando o verbo do mÃ©todo
         public IActionResult Get()
         {
             return Ok();
         }
 
-        [HttpGet("{id:int}/{id2:int}")] // Informando o verbo do método, os parâmetros que o método vai receber e o tipo do parâmetro 
+        [HttpGet("{id:int}/{id2:int}")] // Informando o verbo do mÃ©todo, os parï¿½metros que o mï¿½todo vai receber e o tipo do parï¿½metro 
         public IActionResult Get2(int id, int id2)
         {
             return Ok();
