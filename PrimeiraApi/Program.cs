@@ -1,8 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -22,8 +22,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Alternativa para mapear as rotas da aplicação sem ser diretamente na controller
-app.MapGet("/", () => "Acesse /swagger para mais informações"); 
+// Alternativa para mapear as rotas da aplicaÃ§Ã£o sem ser diretamente na controller
+app.MapGet("/", () => "Acesse /swagger para mais informaÃ§Ãµes"); 
 app.MapGet("/teste-get", () => "Teste");
 
 app.Run();
