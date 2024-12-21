@@ -3,7 +3,6 @@ using ApiFuncional.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors;
 
 namespace ApiFuncional.Controllers
 {
@@ -27,13 +26,13 @@ namespace ApiFuncional.Controllers
         [ProducesDefaultResponseType]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos() 
         {
-            // Implementação de boas práticas de validações
+            // Implementação de boas práticas de validações antes de acessar o banco de dados
             if (_context.Produtos == null)
             {
                 return NotFound();
             }
 
-            return await _context.Produtos.ToListAsync();
+            return await _context.Produtos.ToListAsync(); // Retorna uma lista de produtos assíncrona
         }
 
         [AllowAnonymous] // Desfaz a necessidade de usuário autorizado para este método
@@ -109,7 +108,7 @@ namespace ApiFuncional.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException) // Tratamento de erro de concorrência
             {
                 if (!ProdutoExists(id))
                 {

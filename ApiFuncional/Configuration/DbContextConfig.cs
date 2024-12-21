@@ -12,7 +12,7 @@ namespace ApiFuncional.Configuration
             // Adicionando a conexão com o banco de dados
             builder.Services.AddDbContext<ApiDbContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")); // Informando que vamos utilizar o SQL Server e passando a string de conexão
             });
 
             return builder;
