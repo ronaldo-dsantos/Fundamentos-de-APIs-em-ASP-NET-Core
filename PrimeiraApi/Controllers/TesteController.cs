@@ -7,15 +7,15 @@ namespace PrimeiraApi.Controllers
     public class TesteController : ControllerBase
     {
         [HttpGet]
-        [ProducesResponseType(typeof(Produto), StatusCodes.Status200OK)] // Produzindo um tipo de resposta, informando que devolveremos um tipo produto e um status code de 200 (formatador de resposta, serve para informar a API que tipo de retorno que teremos neste método)
+        [ProducesResponseType(typeof(Produto), StatusCodes.Status200OK)] // Produzindo um tipo de resposta, informando que retornaremos um tipo produto e um status code de 200 (formatador de resposta, serve para informar a API que tipo de retorno que teremos neste método)
         public IActionResult Get()
         {
             return Ok(new Produto { Id = 1, Nome = "Ronaldo" });
         }
 
         [HttpGet("{id:int}")] // Informando que receberemos um parâmetro na rota da requisição
-        [ProducesResponseType(typeof(Produto), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(Produto), StatusCodes.Status200OK)] // Produzindo um tipo de resposta, informando que retornaremos um tipo produto e um status code de 200 em caso de sucesso
+        [ProducesResponseType(StatusCodes.Status404NotFound)] // Informando que retornaremos um status code de 404 em casos de não sucesso
         public IActionResult Get(int id)
         {
             return Ok(new Produto { Id = id, Nome = "Ronaldo" });
@@ -26,7 +26,7 @@ namespace PrimeiraApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Post(Produto produto) // Informando que receberemos dados do produto no corpo da requisição (request body)
         {
-            return CreatedAtAction("Get", new { id = produto.Id }, produto); // Retornando um status code 201, o endpoint para visualizar o recurso criado (rota e parâmetro) e o produto criado
+            return CreatedAtAction("Get", new { id = produto.Id }, produto); // Retornando um status code 201 e o endpoint para visualizar o recurso criado (rota e parâmetro) e o produto criado
         }
 
         [HttpPut("{id:int}")]
