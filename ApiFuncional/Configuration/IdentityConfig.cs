@@ -5,7 +5,6 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using ApiFuncional.Models;
 
-
 namespace ApiFuncional.Configuration
 {
     // Configurações do Identity
