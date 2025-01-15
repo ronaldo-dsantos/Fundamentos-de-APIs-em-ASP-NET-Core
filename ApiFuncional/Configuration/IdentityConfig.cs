@@ -13,9 +13,9 @@ namespace ApiFuncional.Configuration
         public static WebApplicationBuilder AddIdentityConfig(this WebApplicationBuilder builder)
         {
             // Adicionando o Identity
-            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-                            .AddRoles<IdentityRole>()
-                            .AddEntityFrameworkStores<ApiDbContext>();
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>() // IdentityUser para usuário e IdentityRole para as permissões
+                            .AddRoles<IdentityRole>() // Adicionando as permissões
+                            .AddEntityFrameworkStores<ApiDbContext>(); // Adicionando o contexto do banco de dados que iremos utilizar
 
             // Pegando o token e gerando a chave encodada
             var JwtSettingsSection = builder.Configuration.GetSection("JwtSettings"); // Pegando os dados de configuração do token no arquivo appsettings.json

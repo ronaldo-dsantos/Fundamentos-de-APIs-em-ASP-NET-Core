@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|c:\\users\\ronal\\onedrive\\documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\apifuncional\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|c:\\users\\ronal\\onedrive\\documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\apifuncional\\configuration\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|solutionrelative:configuration\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IdentityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Configuration\\IdentityConfig.cs",
+              "RelativeDocumentMoniker": "Configuration\\IdentityConfig.cs",
+              "ToolTip": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Configuration\\IdentityConfig.cs",
+              "RelativeToolTip": "Configuration\\IdentityConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:30:03.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:29:27.078Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
