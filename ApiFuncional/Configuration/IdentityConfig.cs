@@ -17,11 +17,11 @@ namespace ApiFuncional.Configuration
                             .AddRoles<IdentityRole>() // Adicionando as permissões
                             .AddEntityFrameworkStores<ApiDbContext>(); // Adicionando o contexto do banco de dados que iremos utilizar
 
-            // Pegando o token e gerando a chave encodada
+            // Pegando o token e gerando uma chave encodada
             var JwtSettingsSection = builder.Configuration.GetSection("JwtSettings"); // Pegando os dados de configuração do token no arquivo appsettings.json
             builder.Services.Configure<JwtSettings>(JwtSettingsSection); // Populando o modelo JwtSettings com as configurações do token no momento em que rodar a aplicação
 
-            var JwtSettings = JwtSettingsSection.Get<JwtSettings>(); // Pegando uma instância da classe JwtSettings populada
+            var JwtSettings = JwtSettingsSection.Get<JwtSettings>(); // Pegando uma instância da classe JwtSettings já populada
             var key = Encoding.ASCII.GetBytes(JwtSettings.Segredo); // Criando uma key encodada do nosso segredo
 
             // Adicionando a autenticação

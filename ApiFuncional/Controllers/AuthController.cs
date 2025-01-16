@@ -29,7 +29,7 @@ namespace ApiFuncional.Controllers
         [HttpPost("registrar")]
         public async Task<ActionResult> Registrar(RegisterUserViewModel registerUser)
         {
-            if (!ModelState.IsValid) return ValidationProblem(ModelState);
+            if (!ModelState.IsValid) return ValidationProblem(ModelState); // Verificando se o modelo é válido
 
             var user = new IdentityUser
             {

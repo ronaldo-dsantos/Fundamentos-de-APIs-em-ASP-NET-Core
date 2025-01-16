@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|c:\\users\\ronal\\onedrive\\documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\apifuncional\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|c:\\users\\ronal\\onedrive\\documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\apifuncional\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|solutionrelative:controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|c:\\users\\ronal\\onedrive\\documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\apifuncional\\configuration\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|solutionrelative:configuration\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|c:\\users\\ronal\\onedrive\\documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\apifuncional\\models\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|solutionrelative:models\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|c:\\users\\ronal\\onedrive\\documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\apifuncional\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F78925-CF8E-4924-A7A6-6E7D4581DD72}|ApiFuncional.csproj|solutionrelative:models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T02:15:22.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Configuration\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "Configuration\\SwaggerConfig.cs",
+              "ToolTip": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Configuration\\SwaggerConfig.cs",
+              "RelativeToolTip": "Configuration\\SwaggerConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T02:11:42.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Models\\Produto.cs",
+              "RelativeToolTip": "Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T00:50:37.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Models\\RegisterUserViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterUserViewModel.cs",
+              "ToolTip": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Models\\RegisterUserViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T00:47:01.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ronal\\OneDrive\\Documentos\\desenvolvedor.io\\07-fundamentos-de-apis-em-asp-net-core\\ApiFuncional\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "Controllers\\AuthController.cs*",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwB8AAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T00:45:33.063Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

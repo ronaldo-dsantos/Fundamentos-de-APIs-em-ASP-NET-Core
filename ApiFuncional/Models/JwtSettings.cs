@@ -1,6 +1,6 @@
 ﻿namespace ApiFuncional.Models
 {
-    public class JwtSettings
+    public class JwtSettings // Classe de configurações do token JWT
     {
         public string? Segredo { get; set; } // Segredo do token
 
